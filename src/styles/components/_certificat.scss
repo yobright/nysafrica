@@ -1,0 +1,119 @@
+.certificat {
+    clip-path: polygon(0 4%, 100% 0%, 100% 100%, 0% 100%);
+    background-color: $color-1;
+    position: relative;
+    top: -110px;
+    padding: 5rem 2.8rem;
+    
+    
+    .wrapper-certificat {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        margin-top: 5%;
+        padding: 1rem;
+
+        .title-certificat {
+            h3 {
+                text-transform: uppercase;
+                color: rgba(255, 255, 255, 0.856);
+                font-weight: 500;
+                
+            }
+            h1 {
+                
+                font-size: 3rem;
+                color: #fff;
+                font-family: $font-3;
+                font-weight: 600;
+            }
+        }
+
+        .certificat-card-component {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin: 2rem auto;
+
+            .certificat-card {
+                padding: 2rem;
+                height: 564px;
+                width: 468px;
+                background-color: #fff;
+                margin: 20px 40px;
+                border-radius: 16px;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                &:hover {
+                    border-radius: 0px;
+                    transition: .2s ease-in-out;
+                }
+    
+                a {
+                    font-weight: 800;
+                }
+                img {
+                    width: 320px;
+                    height: 220px;
+                }
+                h2 {
+                    text-transform: uppercase;
+                    text-align: center;
+                    margin-top: 2rem;
+                    font-family: $font-3;
+                }
+                p {
+                    text-align: center;
+                    margin: 2rem auto;
+                    line-height: 1.8;
+                    span {
+                        font-weight: 800;
+                    }
+                }
+            }
+            .security {
+                h2, a {
+                    color: $color-security;
+                }
+                &:hover {
+                    background-color: #ffbbbb;
+                }
+            }
+            .network {
+
+                h2,
+                a {
+                    color: $color-network;
+                }
+                &:hover {
+                    background-color: #c3dcff;
+                }
+            }
+            .database {
+
+                h2,
+                a {
+                    color: $color-database;
+                }
+                &:hover {
+                    background-color: #e8c2ff;
+                }
+            }
+            .server {
+
+                h2,
+                a {
+                    color: $color-server;
+                }
+                &:hover {
+                    background-color: #caffdd;
+                }
+                
+            }
+        }
+
+    }
+}
